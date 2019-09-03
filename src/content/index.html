@@ -21,8 +21,177 @@
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
-		<h1>Hello world - with simple PWA support!</h1>
-
+		<main>
+			<section class="hero">
+				<img
+					src="http://rzonsol.pl/obrazy/ja.jpg"
+					alt="Picture with me on the rock in the stream."
+					class="hero__img"
+				/>
+				<h1 class="hero__title">
+					Hey there! My name is Piotr and I'm Backend developer with some
+					Frontend knowledge and runner.
+				</h1>
+				<p class="hero__info">
+					You might be interested in checking the list of
+					<a href="#" class="hero__info__link">my skills</a>. Don’t forget to
+					have a glimpse at
+					<a href="#" class="hero__info__link">my projects</a>. Currently I’m
+					looking for a new challenges so if you have one -
+					<a href="#" class="hero__info__link">contact me</a> 😊
+				</p>
+				<a href="#" class="hero__link_mail">piotr.rzonsowski@rzonsol.pl</a>
+			</section>
+			<section class="skills">
+				<h2 class="skills__title">My skills</h2>
+				<section class="skills__working">
+					<h3 class="skills__working__title">Working knowledge</h3>
+					<section class="skills__working__backend">
+						<h4 class="skills__working__backend__title">Backend</h4>
+						<ul class="skills__working__backend__list">
+							<li class="skills__working__backend__item">Java 8/11</li>
+							<li class="skills__working__backend__item">Spring</li>
+							<li class="skills__working__backend__item">JPA / Hibernate</li>
+							<li class="skills__working__backend__item">Maven</li>
+							<li class="skills__working__backend__item">Oracle DB</li>
+							<li class="skills__working__backend__item">jUnit</li>
+							<li class="skills__working__backend__item">TDD</li>
+							<li class="skills__working__backend__item">REST</li>
+							<li class="skills__working__backend__item">SQL</li>
+							<li class="skills__working__backend__item">SAX</li>
+						</ul>
+					</section>
+					<section class="skills__working__frontend">
+						<h4 class="skills__working_frontend__title">Frontend</h4>
+						<ul class="skills__working__frontend__list">
+							<li class="skills__working__frontend__item">Semantic HTML5</li>
+							<li class="skills__working__frontend__item">Flexbox</li>
+							<li class="skills__working__frontend__item">CSS grid</li>
+							<li class="skills__working__frontend__item">Forms</li>
+							<li class="skills__working__frontend__item">
+								JS: DOM manipulations
+							</li>
+							<li class="skills__working__frontend__item">SASS</li>
+							<li class="skills__working__frontend__item">JS: Local storage</li>
+							<li class="skills__working__frontend__item">LaTex</li>
+							<li class="skills__working__frontend__item">React Js</li>
+							<li class="skills__working__frontend__item">Redux</li>
+							<li class="skills__working__frontend__item">Axios</li>
+						</ul>
+					</section>
+				</section>
+				<section class="skills__know__somethings">
+					<h3 class="skills_know__title">Know something about</h3>
+					<section class="skills__know__backend">
+						<h4 class="skills__know__backend__title">Backend</h4>
+						<ul class="skills__know__backend__list">
+							<li class="skills__know__backend__item">Gradle</li>
+							<li class="skills__know__backend__item">Docker</li>
+							<li class="skills__know__backend__item">SOAP</li>
+							<li class="skills__know__backend__item">NoSQL</li>
+							<li class="skills__know__backend__item">Selenium</li>
+							<li class="skills__know__backend__item">Spring Cloud</li>
+							<li class="skills__know__backend__item">Spring flux</li>
+							<li class="skills__know__backend__item">Multithreading</li>
+						</ul>
+					</section>
+					<section class="skills__know__frontend">
+						<h4 class="skills__know__frontend__title">Frontend</h4>
+						<ul class="skills__know__frontend__list">
+							<li class="skills__know__frontend__item">
+								JavaScript ES6+ features
+							</li>
+							<li class="skills__know__frontend__item">CSS animations</li>
+							<li class="skills__know__frontend__item">NPM Scripts</li>
+							<li class="skills__know__frontend__item">Typescript</li>
+							<li class="skills__know__frontend__item">Bootstrap</li>
+						</ul>
+					</section>
+				</section>
+				<section class="skills__want__learn">
+					<h3 class="skills__learn__title">Want to learn</h3>
+					<section class="skills__learn__backend">
+						<h4 class="skills__learn__backend__title">Backend</h4>
+						<ul class="skills__learn__list">
+							<li class="skills__learn__item">Kubernetes</li>
+							<li class="skills__learn__item">Jenkins</li>
+							<li class="skills__learn__item">Apache Spark</li>
+							<li class="skills__learn__item">Kafka</li>
+							<li class="skills__learn__item">Quarkus</li>
+						</ul>
+					</section>
+					<section class="skills__learn__frontend">
+						<h4 class="skills__learn__frontend__title">Frontend</h4>
+						<ul class="skills__learn__frontend__list">
+							<li class="skills__learn__frontend__item">NodeJs</li>
+							<li class="skills__learn__frontend__item">React hooks</li>
+							<li class="skills__learn__frontend__item">Jasmine</li>
+							<li class="skills__learn__frontend__item">Gatsby</li>
+							<li class="skills__learn__frontend__item">GraphQL</li>
+						</ul>
+					</section>
+				</section>
+			</section>
+			<section class="projects">
+				<h2 class="projects__title">Recent projects</h2>
+				<p class="projects__info">
+					I started my frontend developer path in 2017. I'm backend developer
+					with same knowledge in Machine Leaning and frontend at home 🧐. Here’s
+					the list of the things which I'm currently developing on github.
+				</p>
+				<section class="cards">
+					<section class="cards__item">
+						<img src="../assets/img/github_Icon.svg" alt="Icons of GitHub" />
+						<h4 class="cards__title">Project name</h4>
+						<p class="cards__description">Project description.</p>
+						<footer class="cards__footer">
+							<a class="cards__footer__a" href="#"
+								><img
+									class="cards__footer__image"
+									src="../assets/img/demo_icon.svg"
+									alt="image of pc monitor."
+								/>
+								Demo
+							</a>
+							<a href="#" class="cards__footer__a"
+								><img
+									class="cards__footer__image"
+									src="../assets/img/Code_Icon.svg"
+									alt="image of console."
+								/>
+								GitHub
+							</a>
+						</footer>
+					</section>
+				</section>
+			</section>
+			<footer class="main__footer">
+				<h3 class="main__footer__title">Contact me</h3>
+				<p class="main__footer__info">
+					I’m open for new opportunities. If you have one for me we should talk!
+				</p>
+				<section class="main__footer__social">
+					<img
+						src="../assets/img/FB_Icon.svg"
+						alt="Icon of Facebook"
+						class="main__footer__social__icon"
+					/>
+					<img
+						src="../assets/img/Github_Icon_footer.svg"
+						alt="Icon of GitHub"
+						class="main__footer__social__icon"
+					/>
+					<img
+						src="../assets/img/Instagram_Icon.svg"
+						alt="Icon of Instagrame"
+						class="main__footer__social__icon"
+					/>
+				</section>
+				<a class="main__footer__mail" href="mailto:rzonsol@gmail.com"
+					>rzonsol@gmail.com</a
+				>
+			</footer>
+		</main>
 		<script src="js/main.js"></script>
 	</body>
 </html>
