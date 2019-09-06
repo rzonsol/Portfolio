@@ -1,16 +1,27 @@
-@import "_normalize";
-@import "_variables";
-
+@import '_normalize';
+@import '_variables';
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+	background: white;
+	color: $big-stone;
+	border: 16px solid $big-stone;
+}
+
+.hero__img {
+	border-radius: 50%;
+	border: 6px solid $ghost;
+	padding: 3px;
+	width: 120px;
 }
