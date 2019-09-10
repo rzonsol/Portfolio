@@ -1,0 +1,53 @@
+.main__footer {
+	background: $big-stone;
+	color: #fff;
+	padding-bottom: calc(8rem - 8px);
+
+	&__container {
+		max-width: $max-width;
+		margin: auto;
+	}
+	&__title {
+		margin: 0 auto;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 2.5rem;
+		line-height: 3.5rem;
+		margin-bottom: 1rem;
+		padding: 8rem 0 0;
+		max-width: $max-width;
+		&::before {
+			content: '';
+			width: 5rem;
+			height: 0.25rem;
+			display: block;
+			background: $azure-radiance;
+			border-radius: 8px;
+			margin-bottom: 1.5rem;
+		}
+	}
+	&__info {
+		font-weight: 300;
+		font-size: 1.25rem;
+		line-height: 2.25rem;
+		max-width: 600px;
+		min-width: 400px;
+		margin-bottom: 1.5rem;
+	}
+
+	&__social__icon {
+		margin-right: 2em;
+		margin-bottom: 1.5em;
+	}
+
+	&__mail {
+		border-bottom: 2px solid $azure-radiance;
+		color: $azure-radiance;
+		font-weight: 500;
+		font-size: 1.25rem;
+		padding-bottom: 0.8rem;
+		text-decoration: none;
+		display: block;
+		max-width: 17.5rem;
+	}
+}
