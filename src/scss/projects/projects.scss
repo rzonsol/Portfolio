@@ -1,7 +1,7 @@
 .projects {
 	background: $catskill-white;
 	margin: 0 auto;
-	padding: 8rem 0;
+	padding: 8rem 1rem;
 
 	&__container {
 		max-width: $max-width;
@@ -14,7 +14,6 @@
 		line-height: 2.25rem;
 		color: $shuttle-gray;
 		max-width: 600px;
-		min-width: 400px;
 		margin-bottom: 5rem;
 	}
 
@@ -32,6 +31,10 @@
 		row-gap: 1.5rem;
 		margin: 0;
 		padding: 0;
+
+		@media (max-width: $mobile) {
+			grid-template-columns: 1fr;
+		}
 
 		&__item {
 			background: $white;
@@ -64,8 +67,8 @@
 				&__a {
 					font-style: normal;
 					font-weight: 500;
-					font-size: 18px;
-					line-height: 32px;
+					font-size: 1.25rem;
+					line-height: 2rem;
 					color: $azure-radiance;
 					display: inline-flex;
 					align-items: center;

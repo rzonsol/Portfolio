@@ -6,6 +6,7 @@
 
 .skills {
 	margin: 0 auto;
+	padding: 0 1rem;
 	max-width: $max-width;
 	&__title {
 		font-weight: 600;
@@ -62,6 +63,10 @@
 		display: grid;
 		grid-template-columns: 4fr 2fr 2fr;
 		padding: 1rem 0 3rem;
+		@media (max-width: $mobile) {
+			grid-template-columns: 1fr;
+		}
+
 		&__title {
 			font-weight: 600;
 			font-size: 2rem;
