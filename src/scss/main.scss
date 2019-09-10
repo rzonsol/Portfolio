@@ -5,6 +5,7 @@
 
 @import './hero/hero.scss';
 @import './skills/skills.scss';
+@import './projects/projects.scss';
 
 html {
 	box-sizing: border-box;
@@ -21,7 +22,6 @@ html {
 
 body {
 	background: white;
-	padding: 1rem;
 	color: $big-stone;
 	border: 16px solid $big-stone;
 	-webkit-font-smoothing: antialiased;
