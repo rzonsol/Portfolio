@@ -1,22 +1,13 @@
-"use strict";
+'use strict';
 
-// service worker registration - remove if you're not going to use it
+console.log(`Run 🏃‍♂️🏃‍♂️`);
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-
-// place your code below
-
-
-console.log(`Hello world!`);
-
-
+fetch('https://api.github.com/users/rzonsol/repos?sort=updated&per_page=4')
+	.then(resp => resp.json())
+	.then(resp => {
+		console.log('Data download!!!');
+		console.table(resp);
+	})
+	.catch(errors => {
+		console.log(errors);
+	});
