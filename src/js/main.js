@@ -12,7 +12,7 @@ fetch('https://api.github.com/users/rzonsol/repos?sort=updated&per_page=4')
 
 			const linkToDemoPage =
 				homepage != null
-					? `<a class="cards__item__footer__a" href="${homepage}">
+					? `<a class="cards__item__footer__a" href="${homepage}" target="_blank" rel="nofollow noreferrer">
         Demo
       </a>
       `
@@ -32,7 +32,9 @@ fetch('https://api.github.com/users/rzonsol/repos?sort=updated&per_page=4')
 							<footer class="cards__item__footer">
 								${linkToDemoPage}
 								<a
-									href="${html_url}"
+                  href="${html_url}"
+                  target="_blank" 
+                  rel="nofollow noreferrer"
 									class="cards__item__footer__a cards__item__footer__a__code"
 								>
 									GitHub
@@ -42,5 +44,5 @@ fetch('https://api.github.com/users/rzonsol/repos?sort=updated&per_page=4')
 		});
 	})
 	.catch(errors => {
-		console.log(errors);
+		listOfProjects.innerHTML += 'No connection to github server.';
 	});
