@@ -464,7 +464,8 @@ template {
       -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
               box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
       border-radius: 8px;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
       .projects .cards__item__container {
         padding: 3rem; }
       .projects .cards__item__description {
@@ -472,6 +473,7 @@ template {
         font-weight: 300;
         font-size: 1.125rem;
         line-height: 2rem;
+        padding-bottom: 2rem;
         color: #52606d; }
       .projects .cards__item__title {
         font-family: Poppins;
@@ -482,7 +484,10 @@ template {
       .projects .cards__item__footer {
         background: #f5f7fa;
         padding: 1rem 3rem;
-        text-align: right; }
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        width: 100%; }
         .projects .cards__item__footer__a {
           font-style: normal;
           font-weight: 500;
