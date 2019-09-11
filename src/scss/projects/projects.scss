@@ -41,6 +41,7 @@
 			box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
 			border-radius: 8px;
 			overflow: hidden;
+			position: relative;
 
 			&__container {
 				padding: 3rem;
@@ -50,6 +51,7 @@
 				font-weight: 300;
 				font-size: 1.125rem;
 				line-height: 2rem;
+				padding-bottom: 2rem;
 				color: $shuttle-gray;
 			}
 			&__title {
@@ -63,6 +65,9 @@
 				background: $catskill-white;
 				padding: 1rem 3rem;
 				text-align: right;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
 
 				&__a {
 					font-style: normal;
