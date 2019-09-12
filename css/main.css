@@ -322,7 +322,8 @@ template {
     height: 120px;
     margin-bottom: 2rem;
     padding: 3px;
-    width: 120px; }
+    width: 120px;
+    display: block; }
   .hero__info {
     color: #52606d;
     font-style: normal;
