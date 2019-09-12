@@ -309,9 +309,7 @@ template {
   margin: 0 auto;
   max-width: 681px;
   padding: 7rem 1rem 5rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
   grid-template-columns: 1fr; }
   .hero__img {
     border-radius: 50%;
@@ -396,14 +394,11 @@ template {
     font-weight: 500;
     padding-top: 0.8rem; }
   .skills__working, .skills__learn, .skills__know {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 4fr 2fr 2fr;
     grid-template-columns: 4fr 2fr 2fr;
     padding: 1rem 0 3rem; }
     @media (max-width: 600px) {
       .skills__working, .skills__learn, .skills__know {
-        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr; } }
     .skills__working__title, .skills__learn__title, .skills__know__title {
       font-weight: 600;
@@ -443,19 +438,15 @@ template {
     line-height: 3rem;
     padding: 1rem 0; }
   .projects .cards {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 1.5rem;
-       -moz-column-gap: 1.5rem;
-            column-gap: 1.5rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
     row-gap: 1.5rem;
     margin: 0;
     padding: 0; }
     @media (max-width: 600px) {
       .projects .cards {
-        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr; } }
     .projects .cards__item {
       background: #ffffff;
